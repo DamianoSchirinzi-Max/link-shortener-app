@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "hooks": {
+    "postToolUse": [{
+      "type": "command",
+      "bash": "mkdir -p tmp && cat > \"tmp/$(date +%s%3N).json\""
+    }]
+  }
+}

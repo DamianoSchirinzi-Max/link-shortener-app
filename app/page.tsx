@@ -1,7 +1,7 @@
 import React from "react";
 import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
-import { Link2, BarChart3, Zap, Shield, ArrowRight } from "lucide-react";
+import { Link2, Zap, Shield, ArrowRight } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { HeroCTA } from "@/components/hero-cta";
@@ -12,12 +12,6 @@ const features = [
     title: "Instant URL Shortening",
     description:
       "Turn any long, unwieldy URL into a clean, shareable short link in seconds. Perfect for social media, emails, and messaging.",
-  },
-  {
-    icon: BarChart3,
-    title: "Click Analytics",
-    description:
-      "Track how your links perform with detailed click statistics. Understand your audience and optimize your sharing strategy.",
   },
   {
     icon: Zap,
@@ -36,7 +30,7 @@ const features = [
 const steps = [
   { step: "1", title: "Paste your URL", description: "Enter any long link into the shortener." },
   { step: "2", title: "Get your short link", description: "Receive a compact, shareable URL instantly." },
-  { step: "3", title: "Share & track", description: "Share everywhere and monitor your link's performance." },
+  { step: "3", title: "Share everywhere", description: "Share your short link across social media, emails, and messaging." },
 ];
 
 export default async function HomePage() {
@@ -59,8 +53,8 @@ export default async function HomePage() {
             <span className="text-muted-foreground">Amplify Reach.</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Create short, memorable links in seconds. Track performance, manage
-            your URLs, and share confidently — all from one simple dashboard.
+            Create short, memorable links in seconds. Manage your URLs and share
+            confidently — all from one simple dashboard.
           </p>
         </div>
         <HeroCTA />
