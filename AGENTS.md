@@ -16,19 +16,6 @@ This is a Next.js 16+ URL shortening application with authentication, database p
 - **UI Components**: shadcn/ui + Radix UI
 - **Icons**: Lucide React
 
-## 📚 Detailed Instructions
-
-> ## 🛑 STOP — MANDATORY BEFORE WRITING ANY CODE
-> **You MUST read the relevant file(s) from the `/docs` directory before generating a single line of code.**
-> Skipping this step is not allowed under any circumstances — even for trivial changes.
-> If you are unsure which doc applies, read all of them.
-
-1. **[Authentication Rules](docs/authentication-rules.md)** ⚠️ **READ THIS FIRST, EVERY TIME** - Clerk-only auth, protected routes, modal sign-in/up
-2. **[UI Components Rules](docs/ui-components-rules.md)** - shadcn/ui-only components, no custom UI primitives
-
-**Failure to read the relevant `/docs` file before writing code is a critical violation of these instructions.**
-
-
 ## 🎯 Project-Specific Conventions
 
 ### File Organization
@@ -81,7 +68,6 @@ npx drizzle-kit studio    # Open Drizzle Studio
 1. 🛑 **MANDATORY: Read [authentication-rules.md](docs/authentication-rules.md)** — no exceptions, even if you think you know the rules
 2. 🛑 **MANDATORY: Read [ui-components-rules.md](docs/ui-components-rules.md)** — no exceptions, even for small UI changes
 3. ✅ Check if similar patterns exist in the codebase
-4. ✅ Confirm all relevant `/docs` guides have been read before proceeding
 5. ✅ Verify Next.js 16+ compatibility
 6. ✅ Use TypeScript strict mode (no `any` types)
 7. ✅ Follow existing naming conventions
