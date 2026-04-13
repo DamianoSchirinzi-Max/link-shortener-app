@@ -2,6 +2,15 @@ import { db } from "@/db";
 import { links } from "@/db/schema";
 import { and, desc, eq } from "drizzle-orm";
 
+export async function getLinkByShortCode(shortCode: string) {
+  const results = await db
+    .select()
+    .from(links)
+    .where(eq(links.shortCode, shortCode))
+    .limit(1);
+  return results[0] ?? null;
+}
+
 export async function getLinksByUserId(userId: string) {
   return db.select().from(links).where(eq(links.userId, userId)).orderBy(desc(links.updatedAt));
 }
